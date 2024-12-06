@@ -3,9 +3,13 @@ import logging
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 import utils
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token='2043706009:AAGyOD6rkIbtv93jtWFBeEgCAoBoXYlP98I')
+bot = Bot(token=os.getenv('API_TOKEN'))
 dp = Dispatcher()
 
 @dp.message(Command('start'))

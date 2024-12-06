@@ -1,6 +1,6 @@
-venv/
+.venv/
 venv
-venv/*
 __pycache__/
+ModifiedImages/
 OriginalImages/
 .env
